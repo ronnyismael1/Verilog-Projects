@@ -1,0 +1,26 @@
+# Compile of demo.v was successful.
+vsim -gui work.demo
+# vsim -gui work.demo 
+# Start time: 13:54:39 on Feb 27,2023
+# Loading work.demo
+add wave  \
+sim:/demo/A \
+sim:/demo/B \
+sim:/demo/Cin \
+sim:/demo/S \
+sim:/demo/Cout \
+sim:/demo/mid \
+sim:/demo/SYNTHESIZED_WIRE_0 \
+sim:/demo/SYNTHESIZED_WIRE_1
+force a 0
+# ** UI-Msg (suppressible): (vsim-4008) Object 'a' not found.
+# 
+force A 0
+force B 0
+force C 0
+# ** UI-Msg (suppressible): (vsim-4008) Object 'C' not found.
+# 
+force Cin 0
+run 100
+# End time: 13:55:10 on Feb 27,2023, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 7

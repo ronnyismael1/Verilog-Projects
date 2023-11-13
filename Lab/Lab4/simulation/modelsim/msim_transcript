@@ -1,0 +1,44 @@
+vsim -gui -l msim_transcript work.CLA4 work.CLALogic work.lab4_ronnyismael
+# vsim -gui -l msim_transcript work.CLA4 work.CLALogic work.lab4_ronnyismael 
+# Start time: 15:30:13 on Mar 09,2023
+# Loading work.CLA4
+# Loading work.lab4_ronnyismael
+# Loading work.CLALogic
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'Ci'. The port definition is at: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /CLA4/cl File: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v Line: 42
+add wave  \
+sim:/CLA4/A \
+sim:/CLA4/B \
+sim:/CLA4/Ci \
+sim:/CLA4/S \
+sim:/CLA4/Co
+force A 0001
+force B 1100
+force Ci 0
+run 100
+force A 0001
+force B 1100
+restart -f -nolist -nowave -nolog -nobreak -novirtuals -noassertions -nofcovers -noatv
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'Ci'. The port definition is at: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /CLA4/cl File: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v Line: 42
+add wave  \
+sim:/CLA4/A \
+sim:/CLA4/B \
+sim:/CLA4/Ci \
+sim:/CLA4/S \
+sim:/CLA4/Co
+force A 1100
+force B 1100
+force Ci 1
+run 100
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+force A 1001
+force Ci 0
+run 100
+force A 0001
+run 100
+# End time: 15:32:37 on Mar 09,2023, Elapsed time: 0:02:24
+# Errors: 0, Warnings: 2

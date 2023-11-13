@@ -1,0 +1,15 @@
+C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu32
+
+Top level modules:
+	alu32
+
+} {} {}} C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32_tb.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module alu32_tb
+
+Top level modules:
+	alu32_tb
+
+} {} {}}

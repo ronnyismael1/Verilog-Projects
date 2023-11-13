@@ -1,0 +1,129 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/simulation/modelsim
+vCLA4
+Z1 !s110 1679343047
+!i10b 1
+!s100 8^dYY8IWd^e8X=;Uh^Nhk1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I>NE^>QcdN8KDaThJCXN]U0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1679342114
+Z5 8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v
+Z6 FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v
+!i122 24
+L0 25 16
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1679343046.000000
+Z9 !s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v|
+Z10 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+n@c@l@a4
+vCLALogic
+R1
+!i10b 1
+!s100 X3oDnLblbbkHIz;IMR6m^1
+R2
+IZ6n?kEUak;DNafK3hN38_3
+R3
+R0
+R4
+R5
+R6
+!i122 24
+L0 10 14
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@c@l@a@logic
+vGPFullAdder
+R1
+!i10b 1
+!s100 >SkFDM?mX39Y;FN@[0RCN1
+R2
+I904_RzmmW9cYH3LFdZ>m]2
+R3
+R0
+R4
+R5
+R6
+!i122 24
+L0 1 8
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
+n@g@p@full@adder
+vself_check_tb
+!s110 1679077242
+!i10b 1
+!s100 C0XI>__`;3BCP?LSTi?[]3
+R2
+IQQ;`S]QEBVVac5H@Sn_LA0
+R3
+R0
+w1679076908
+8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v
+FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v
+!i122 7
+L0 1 26
+R7
+r1
+!s85 0
+31
+!s108 1679077242.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v|
+!i113 1
+R11
+R12
+vtest_vector_tb
+R1
+!i10b 1
+!s100 jmW6MCEYbNMnHMRc@BmlD1
+R2
+IBjj<ID1G8al?TT1=:Z^FL2
+R3
+R0
+w1679079205
+8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/test_vector_tb.v
+FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/test_vector_tb.v
+!i122 25
+L0 1 53
+R7
+r1
+!s85 0
+31
+!s108 1679343047.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/test_vector_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/test_vector_tb.v|
+!i113 1
+R11
+R12

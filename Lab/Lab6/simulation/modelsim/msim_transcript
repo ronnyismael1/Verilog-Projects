@@ -1,0 +1,275 @@
+vsim -gui -l msim_transcript work.vending_machine_fsm work.vending_machine_tb
+# vsim -gui -l msim_transcript work.vending_machine_fsm work.vending_machine_tb 
+# Start time: 12:17:24 on Apr 10,2023
+# Loading work.vending_machine_fsm
+# Loading work.vending_machine_tb
+add wave  \
+sim:/vending_machine_tb/main/reset \
+sim:/vending_machine_tb/main/nickel \
+sim:/vending_machine_tb/main/dime \
+sim:/vending_machine_tb/main/quarter \
+sim:/vending_machine_tb/main/dispense \
+sim:/vending_machine_tb/main/returnNickel \
+sim:/vending_machine_tb/main/returnDime \
+sim:/vending_machine_tb/main/returnTwoDimes
+run 100
+# Reseting Vending Machine...
+# Success: Input = 000
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 1 (1 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Quarter...
+# Success: Input = 001
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+restart -f -nolist -nowave -nolog -nobreak -novirtuals -noassertions -nofcovers -noatv
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+add wave  \
+sim:/vending_machine_tb/main/reset \
+sim:/vending_machine_tb/main/nickel \
+sim:/vending_machine_tb/main/dime \
+sim:/vending_machine_tb/main/quarter \
+sim:/vending_machine_tb/main/dispense \
+sim:/vending_machine_tb/main/returnNickel \
+sim:/vending_machine_tb/main/returnDime \
+sim:/vending_machine_tb/main/returnTwoDimes
+run 100
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Reseting Vending Machine...
+# Success: Input = 000
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+restart -f -nolist -nowave -nolog -nobreak -novirtuals -noassertions -nofcovers -noatv
+add wave  \
+sim:/vending_machine_tb/main/reset \
+sim:/vending_machine_tb/main/nickel \
+sim:/vending_machine_tb/main/dime \
+sim:/vending_machine_tb/main/quarter \
+sim:/vending_machine_tb/main/dispense \
+sim:/vending_machine_tb/main/returnNickel \
+sim:/vending_machine_tb/main/returnDime \
+sim:/vending_machine_tb/main/returnTwoDimes
+run 100
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Reseting Vending Machine...
+# Success: Input = 000
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 1 (1 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Quarter...
+# Success: Input = 001
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Quarter...
+# Success: Input = 001
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 1 (1 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Nickel...
+# Success: Input = 100
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Quarter...
+# Success: Input = 001
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 1 (1 expected)
+#  outputs = Return Dime = 1 (1 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Dime...
+# Success: Input = 010
+#  outputs = Dispense = 0 (0 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 0 (0 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+run 100
+# Inserting Quarter...
+# Success: Input = 001
+#  outputs = Dispense = 1 (1 expected)
+#  outputs = Return Nicke = 0 (0 expected)
+#  outputs = Return Dime = 1 (1 expected)
+#  outputs = Return Two Dime = 0 (0 expected)
+#      18 tests completed with       0 errors
+# End time: 15:09:01 on Apr 10,2023, Elapsed time: 2:51:37
+# Errors: 0, Warnings: 1

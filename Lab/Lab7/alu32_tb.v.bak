@@ -1,0 +1,48 @@
+module alu32_tb();
+  reg clk, reset;
+  reg [31:0] A, B;
+  reg [2:0] F;
+  reg [31:0] Y_expected;
+  reg Overflow_expected, Zero_expected;
+  wire [31:0] Y;
+  wire Overflow, Zero;
+
+  reg [31:0] vectornum, errors;
+  reg [95:0] testvectors[10000:0];
+
+  // Instantiate device under test
+  alu32 dut(A, B, F, Y, Overflow, Zero);
+
+  // Generate clock
+  always begin
+    clk = 1; #5; clk = 0; #5;
+  end
+
+  // At the start of the test, load vectors and pulse reset
+  initial begin
+    $readmemb("test_vectors.tv", testvectors);
+    vectornum = 0; errors = 0;
+    reset = 1; #27; reset = 0;
+  end
+
+  // Apply test vectors on the rising edge of clk
+  always @(posedge clk) begin
+    #1; {A, B, F, Y_expected, Overflow_expected, Zero_expected} = testvectors[vectornum];
+  end
+
+  // Check results on the falling edge of clk
+  always @(negedge clk) begin
+    if (~reset) begin // Skip cycles during reset
+      if (Y !== Y_expected || Overflow !== Overflow_expected || Zero !== Zero_expected) begin // Check results
+        $display("Error: inputs = %b", {A, B, F});
+        $display(" outputs = %b (%b expected)", {Y, Overflow, Zero}, {Y_expected, Overflow_expected, Zero_expected});
+        errors = errors + 1;
+      end
+      vectornum = vectornum + 1;
+      if (testvectors[vectornum] === 96'bx) begin
+        $display("%d tests completed with %d errors", vectornum, errors);
+        $finish;
+      end
+    end
+  end
+endmodule

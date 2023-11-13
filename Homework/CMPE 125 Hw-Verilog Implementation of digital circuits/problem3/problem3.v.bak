@@ -1,0 +1,12 @@
+module problem3(input [7:0] inputs, output reg [2:0] output ); 
+	always @(*) 
+		begin 
+			case (1'b1) 
+			inputs[0]: output = 3'b000; inputs[1]: output = 3'b001;
+			inputs[2]: output = 3'b010; inputs[3]: output = 3'b011; 
+			inputs[4]: output = 3'b100; inputs[5]: output = 3'b101; 
+			inputs[6]: output = 3'b110; inputs[7]: output = 3'b111; 
+			default: output = 3'b111; // If no inputs are high, output high priority 
+		endcase 
+	end 
+endmodule

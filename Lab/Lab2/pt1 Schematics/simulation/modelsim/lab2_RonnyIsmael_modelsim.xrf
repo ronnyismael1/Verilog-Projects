@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Lab/Lab2/pt1 Schematics/lab2_RonnyIsmael.bdf
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Lab/Lab2/pt1 Schematics/db/lab2_RonnyIsmael.cbx.xml
+design_name = lab2_RonnyIsmael
+instance = comp, \S~output , S~output, lab2_RonnyIsmael, 1
+instance = comp, \Cout~output , Cout~output, lab2_RonnyIsmael, 1
+instance = comp, \B~input , B~input, lab2_RonnyIsmael, 1
+instance = comp, \A~input , A~input, lab2_RonnyIsmael, 1
+instance = comp, \Cin~input , Cin~input, lab2_RonnyIsmael, 1
+instance = comp, \inst1~0 , inst1~0, lab2_RonnyIsmael, 1
+instance = comp, \inst4~0 , inst4~0, lab2_RonnyIsmael, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

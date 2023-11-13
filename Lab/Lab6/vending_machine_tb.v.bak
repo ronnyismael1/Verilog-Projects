@@ -1,0 +1,69 @@
+// vending_machine_tb.v
+module vending_machine_tb;
+
+    reg clk, reset, nickel, dime, quarter;
+    wire dispense, returnNickel, returnDime, returnTwoDimes;
+
+    reg [6:0] testvectors[6:0];
+    integer vectNum, errors;
+
+    // Instantiate the vending machine FSM
+    vending_machine_fsm fsm (
+        .clk(clk),
+        .reset(reset),
+        .nickel(nickel),
+        .dime(dime),
+        .quarter(quarter),
+        .dispense(dispense),
+        .returnNickel(returnNickel),
+        .returnDime(returnDime),
+        .returnTwoDimes(returnTwoDimes)
+    );
+
+    // Clock generation
+    always begin
+        #5 clk = ~clk;
+    end
+
+    // Stimulus
+    initial begin
+        clk = 0;
+        reset = 1;
+        nickel = 0;
+        dime = 0;
+        quarter = 0;
+
+        // Load test vectors
+        $readmemb("test_vector.tv", testvectors);
+        vectNum = 0;
+        errors = 0;
+
+        // Reset
+        #10 reset = 0;
+        #15;
+
+        // Test loop
+        for (vectNum = 0; vectNum < 7; vectNum = vectNum + 1) begin
+            {nickel, dime, quarter} = testvectors[vectNum][2:0];
+            #10;
+            if (dispense !== testvectors[vectNum][3] || returnNickel !== testvectors[vectNum][4] || returnDime !== testvectors[vectNum][5] || returnTwoDimes !== testvectors[vectNum][6]) begin
+                $display("Error: inputs nickel = %b, dime = %b, quarter = %b", nickel, dime, quarter);
+                $display("outputs: dispense = %b (expected: %b), returnNickel = %b (expected: %b), returnDime = %b (expected: %b), returnTwoDimes = %b (expected: %b)",
+                         dispense, testvectors[vectNum][3], returnNickel, testvectors[vectNum][4], returnDime, testvectors[vectNum][5], returnTwoDimes, testvectors[vectNum][6]);
+                errors = errors + 1;
+            end else begin
+                $display("Success: inputs nickel = %b, dime = %b, quarter = %b", nickel, dime, quarter);
+                $display("Outputs: dispense = %b (expected: %b), returnNickel = %b (expected: %b), returnDime = %b (expected: %b), returnTwoDimes = %b (expected: %b)",
+                         dispense, testvectors[vectNum][3], returnNickel, testvectors[vectNum][4], returnDime, testvectors[vectNum][5], returnTwoDimes, testvectors[vectNum][6]);
+            end
+            #10;
+        end
+
+        // Display test results
+        $display("%d test completed with %d errors", vectNum, errors);
+
+        // Finish simulation
+        $finish;
+    end
+
+endmodule

@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dispense",
+					"strict" : false
+				},
+				{
+					"name" : "returnNickel",
+					"strict" : false
+				},
+				{
+					"name" : "returnDime",
+					"strict" : false
+				},
+				{
+					"name" : "returnTwoDimes",
+					"strict" : false
+				},
+				{
+					"name" : "quarter",
+					"strict" : false
+				},
+				{
+					"name" : "dime",
+					"strict" : false
+				},
+				{
+					"name" : "nickel",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

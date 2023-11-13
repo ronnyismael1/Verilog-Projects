@@ -1,0 +1,15 @@
+C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab8/ram_single.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab8/ram_single.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ram_single
+
+Top level modules:
+	ram_single
+
+} {} {}} C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab8/test_single_port_tb.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab8/test_single_port_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module test_single_port_tb
+
+Top level modules:
+	test_single_port_tb
+
+} {} {}}

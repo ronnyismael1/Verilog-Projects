@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "GRAY_OUT[0]",
+					"strict" : false
+				},
+				{
+					"name" : "GRAY_OUT[1]",
+					"strict" : false
+				},
+				{
+					"name" : "GRAY_OUT[2]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "RESET",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

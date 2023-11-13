@@ -1,0 +1,82 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/simulation/modelsim
+vCLA4
+Z1 !s110 1678404590
+!i10b 1
+!s100 PEVYhn:ilz2[PXgg]7@WH0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IlB^KaMc@PRUjB[^LFjX660
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1678313942
+Z5 8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v
+Z6 FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v
+!i122 5
+L0 28 16
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1678404590.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v|
+Z9 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@c@l@a4
+vCLALogic
+R1
+!i10b 1
+!s100 mbMnMD94Y4Yfo010o>UdG2
+R2
+ITR67?l;mmhVo7aMW:9DfI1
+R3
+R0
+R4
+R5
+R6
+!i122 5
+L0 13 14
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab4/lab4_ronnyismael.v|
+R9
+!i113 1
+R10
+R11
+n@c@l@a@logic
+vlab4_ronnyismael
+R1
+!i10b 1
+!s100 i3SBl;k<=aOnkUN4X<ll_3
+R2
+I^6g2z4nzKP2=Wm:VM^91a2
+R3
+R0
+R4
+R5
+R6
+!i122 5
+L0 4 8
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 1
+R10
+R11

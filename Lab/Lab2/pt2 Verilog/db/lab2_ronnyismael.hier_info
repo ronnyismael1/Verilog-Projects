@@ -1,0 +1,10 @@
+|lab2_ronnyismael
+a => comb.IN0
+a => w1.IN0
+b => comb.IN1
+b => w1.IN1
+cin => w2.IN1
+s << comb.DB_MAX_OUTPUT_PORT_TYPE
+cout << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

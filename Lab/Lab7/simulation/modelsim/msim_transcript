@@ -1,0 +1,28 @@
+vsim -gui -l msim_transcript work.alu32 work.alu32_tb
+# vsim -gui -l msim_transcript work.alu32 work.alu32_tb 
+# Start time: 12:48:14 on Apr 24,2023
+# Loading work.alu32
+# Loading work.alu32_tb
+add wave  \
+sim:/alu32_tb/dut/A \
+sim:/alu32_tb/dut/B \
+sim:/alu32_tb/dut/F \
+sim:/alu32_tb/dut/Y \
+sim:/alu32_tb/dut/Overflow \
+sim:/alu32_tb/dut/Zero
+run
+run
+run
+run
+run
+run
+run
+# Y result Error: inputs = 10000000000000000000000000001000
+#  outputs = 10000000000000000000000000001000 (00000000000000000000000000000001 expected)
+#          7 tests completed with          1 errors
+# ** Note: $finish    : C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32_tb.v(54)
+#    Time: 650 ps  Iteration: 1  Instance: /alu32_tb
+# 1
+# Break in Module alu32_tb at C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab7/alu32_tb.v line 54
+# End time: 14:03:04 on Apr 24,2023, Elapsed time: 1:14:50
+# Errors: 0, Warnings: 5

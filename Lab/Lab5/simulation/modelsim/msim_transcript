@@ -1,0 +1,36 @@
+vsim -gui -l msim_transcript work.GPFullAdder work.test_vector_tb
+# vsim -gui -l msim_transcript work.GPFullAdder work.test_vector_tb 
+# Start time: 13:10:57 on Mar 20,2023
+# Loading work.GPFullAdder
+# Loading work.test_vector_tb
+# Loading work.CLA4
+# Loading work.CLALogic
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (1) for port 'Ci'. The port definition is at: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /test_vector_tb/main/cl File: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v Line: 39
+# ** Warning: (vsim-3015) [PCDPC] - Port size (4) does not match connection size (3) for port 'C'. The port definition is at: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /test_vector_tb/main/cl File: C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v Line: 39
+add wave  \
+sim:/test_vector_tb/main/A \
+sim:/test_vector_tb/main/B \
+sim:/test_vector_tb/main/Ci \
+sim:/test_vector_tb/main/S \
+sim:/test_vector_tb/main/Co
+run
+# Inputs A = 0000, B = 0000
+# Success: inputs A = 0000, B = 0000, Cin = 0
+# Outputs: Sum = 0000 (expected : 0000)	Cout = 0 (expected : 0)
+run
+# Inputs A = 1100, B = 1100
+# Success: inputs A = 1100, B = 1100, Cin = 1
+# Outputs: Sum = 1001 (expected : 1001)	Cout = 1 (expected : 1)
+run
+# Inputs A = 0011, B = 0011
+# Success: inputs A = 0011, B = 0011, Cin = 1
+# Outputs: Sum = 0111 (expected : 0111)	Cout = 0 (expected : 0)
+run
+# Inputs A = 1001, B = 1001
+# Success: inputs A = 1001, B = 1001, Cin = 0
+# Outputs: Sum = 0010 (expected : 0010)	Cout = 1 (expected : 1)
+#  4 test completed with  0 errors
+# End time: 21:26:53 on Mar 20,2023, Elapsed time: 8:15:56
+# Errors: 0, Warnings: 7

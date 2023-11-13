@@ -1,0 +1,38 @@
+module test_true_dual_port_tb();
+    reg [7:0] d1, d2;
+    reg [6:0] a1, a2;
+    reg we1, we2, clk;
+    wire [7:0] q1, q2;
+
+    // Instantiate the true dual port RAM
+    ram_true_dual_port main(q1, q2, a1, a2, d1, d2, we1, we2, clk);
+
+    // Generate clock
+    always begin
+        clk = 1; #5; clk = 0; #5;
+    end
+
+    // Testbench stimulus
+    initial begin
+        // Initialize inputs
+        d1 = 8'h00; d2 = 8'h00;
+        a1 = 7'h00; a2 = 7'h00;
+        we1 = 1'b0; we2 = 1'b0;
+
+        // Apply test vectors
+        a1 = 7'h00; d1 = 8'hA5; we1 = 1'b1; @(posedge clk);
+        a2 = 7'h01; d2 = 8'h3C; we2 = 1'b1; @(posedge clk);
+        a1 = 7'h02; d1 = 8'hF7; we1 = 1'b1; @(posedge clk);
+
+        // Disable write enable
+        we1 = 1'b0; we2 = 1'b0;
+
+        // Read and check data
+        a1 = 7'h00; @(posedge clk); $display("Read address 0: Expected = 8'hA5, Actual = %h", q1);
+        a2 = 7'h01; @(posedge clk); $display("Read address 1: Expected = 8'h3C, Actual = %h", q2);
+        a1 = 7'h02; @(posedge clk); $display("Read address 2: Expected = 8'hF7, Actual = %h", q1);
+
+        // Finish testbench
+        $finish;
+    end
+endmodule

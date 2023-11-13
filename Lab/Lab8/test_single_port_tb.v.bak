@@ -1,0 +1,48 @@
+module test_single_port_tb;
+    reg [7:0] d;
+    reg [6:0] a;
+    reg we, clk;
+    wire [7:0] q;
+    reg [7:0] Sexpected;
+    reg [6:0] vectNum;
+    reg errors;
+    reg [15:0] testvectors[127:0];
+
+    ram_single ram_inst(q, a, d, we, clk);
+
+    always
+        begin
+            clk = 1; #10; clk = 0; #10;
+        end
+
+    initial
+        begin
+            $readmemb("test_vectors_single_port.tv", testvectors);
+            vectNum = 0; errors = 0;
+        end
+
+    always@(posedge clk)
+        begin
+            #1; {a[6:0], d[7:0], we, Sexpected[7:0]} = testvectors[vectNum];
+        end
+
+    always@(negedge clk)
+        begin
+            if (q !== Sexpected)
+                begin
+                    $display("Error: Address = %b, Data = %b, Write Enable = %b", a, d, we);
+                    $display("Output: Q = %b (expected: %b)", q, Sexpected);
+                    errors = errors + 1;
+                end
+            else
+                begin
+                    $display("Success: Address = %b, Data = %b, Write Enable = %b", a, d, we);
+                    $display("Output: Q = %b (expected: %b)", q, Sexpected);
+                end
+            vectNum = vectNum + 1;
+            if (testvectors[vectNum] === 16'bx)
+                begin
+                    $display("%d test completed with %d errors", vectNum, errors);
+                end
+        end
+endmodule

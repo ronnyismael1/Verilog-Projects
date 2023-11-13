@@ -1,0 +1,29 @@
+|vending_machine_fsm
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+nickel => dispense.IN0
+nickel => nextstate.S4.IN1
+nickel => nextstate.S4.OUTPUTSELECT
+nickel => nextstate.S0.OUTPUTSELECT
+nickel => Selector2.IN4
+nickel => Selector3.IN4
+nickel => Selector4.IN4
+nickel => Selector1.IN0
+nickel => Selector0.IN4
+dime => dispense.IN0
+dime => dispense.IN0
+dime => nextstate.S4.IN0
+dime => nextstate.S4.DATAA
+dime => nextstate.S0.DATAA
+quarter => dispense.IN0
+quarter => dispense.IN0
+quarter => dispense.IN0
+quarter => dispense.IN0
+quarter => dispense.IN0
+quarter => nextstate.S4.IN1
+dispense << dispense.DB_MAX_OUTPUT_PORT_TYPE
+returnNickel << returnNickel.DB_MAX_OUTPUT_PORT_TYPE
+returnDime << returnDime.DB_MAX_OUTPUT_PORT_TYPE
+returnTwoDimes << dispense.DB_MAX_OUTPUT_PORT_TYPE
+
+

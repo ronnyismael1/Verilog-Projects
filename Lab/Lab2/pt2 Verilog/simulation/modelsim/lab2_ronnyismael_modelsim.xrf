@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Lab/Lab2/pt2 Verilog/lab2_ronnyismael.v
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Lab/Lab2/pt2 Verilog/db/lab2_ronnyismael.cbx.xml
+design_name = lab2_ronnyismael
+instance = comp, \s~output , s~output, lab2_ronnyismael, 1
+instance = comp, \cout~output , cout~output, lab2_ronnyismael, 1
+instance = comp, \b~input , b~input, lab2_ronnyismael, 1
+instance = comp, \a~input , a~input, lab2_ronnyismael, 1
+instance = comp, \comb~0 , comb~0, lab2_ronnyismael, 1
+instance = comp, \cin~input , cin~input, lab2_ronnyismael, 1
+instance = comp, \comb~1 , comb~1, lab2_ronnyismael, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

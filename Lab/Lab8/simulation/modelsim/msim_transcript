@@ -1,0 +1,36 @@
+vsim -gui -l msim_transcript work.ram_dual_port work.test_dual_port_tb
+# vsim -gui -l msim_transcript work.ram_dual_port work.test_dual_port_tb 
+# Start time: 12:52:26 on May 08,2023
+# Loading work.ram_dual_port
+# Loading work.test_dual_port_tb
+add wave  \
+sim:/test_dual_port_tb/main/q1 \
+sim:/test_dual_port_tb/main/q2 \
+sim:/test_dual_port_tb/main/d1 \
+sim:/test_dual_port_tb/main/d2 \
+sim:/test_dual_port_tb/main/a1 \
+sim:/test_dual_port_tb/main/a2 \
+sim:/test_dual_port_tb/main/we1 \
+sim:/test_dual_port_tb/main/we2 \
+sim:/test_dual_port_tb/main/clk1 \
+sim:/test_dual_port_tb/main/clk2 \
+sim:/test_dual_port_tb/main/mem1 \
+sim:/test_dual_port_tb/main/mem2
+run
+run
+# Expected=b11001100, Read = 11001100
+# Expected=b11001101, Read = 11001101
+run
+run
+# Expected=b10101010, Read = 10101010
+# Expected=b10101011, Read = 10101011
+run
+run
+# Expected=b00001111, Read = 00001111
+# Expected=b10001111, Read = 10001111
+run
+run
+# Expected=11110000, Read = 11110000
+# Expected=11110001, Read = 11110001
+# End time: 12:53:23 on May 08,2023, Elapsed time: 0:00:57
+# Errors: 0, Warnings: 5

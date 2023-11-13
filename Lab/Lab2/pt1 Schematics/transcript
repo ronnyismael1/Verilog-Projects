@@ -1,0 +1,56 @@
+# Compile of lab2_RonnyIsmael.v was successful.
+vsim -gui work.lab2_RonnyIsmael
+# vsim -gui work.lab2_RonnyIsmael 
+# Start time: 13:24:32 on Feb 15,2023
+# Loading work.lab2_RonnyIsmael
+add wave -position insertpoint  \
+sim:/lab2_RonnyIsmael/A \
+sim:/lab2_RonnyIsmael/B \
+sim:/lab2_RonnyIsmael/Cin \
+sim:/lab2_RonnyIsmael/S \
+sim:/lab2_RonnyIsmael/Cout \
+sim:/lab2_RonnyIsmael/mid \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_0 \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_1
+add wave  \
+sim:/lab2_RonnyIsmael/A \
+sim:/lab2_RonnyIsmael/B \
+sim:/lab2_RonnyIsmael/Cin \
+sim:/lab2_RonnyIsmael/S \
+sim:/lab2_RonnyIsmael/Cout \
+sim:/lab2_RonnyIsmael/mid \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_0 \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_1
+add wave  \
+sim:/lab2_RonnyIsmael/A \
+sim:/lab2_RonnyIsmael/B \
+sim:/lab2_RonnyIsmael/Cin \
+sim:/lab2_RonnyIsmael/S \
+sim:/lab2_RonnyIsmael/Cout \
+sim:/lab2_RonnyIsmael/mid \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_0 \
+sim:/lab2_RonnyIsmael/SYNTHESIZED_WIRE_1
+force A 0
+force B 0
+force Cin 0
+run 100
+force A 1
+run 100
+force A 0
+force B 1
+run 100
+force A 1
+run 100
+force A 0
+force B 0
+force Cin 1
+run 100
+force A 1
+run 100
+force A 0
+force B 1
+run 100
+force A 1
+run 100
+# End time: 13:29:30 on Feb 15,2023, Elapsed time: 0:04:58
+# Errors: 0, Warnings: 9

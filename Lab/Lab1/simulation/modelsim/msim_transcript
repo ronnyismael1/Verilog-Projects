@@ -1,0 +1,20 @@
+vsim -gui -l msim_transcript rtl_work.Light
+# vsim -gui -l msim_transcript rtl_work.Light 
+# Start time: 07:52:11 on Feb 09,2023
+# Loading rtl_work.Light
+add wave -position insertpoint  \
+sim:/Light/x1 \
+sim:/Light/x2 \
+sim:/Light/f
+force -freeze sim:/Light/x1 0 0, 1 {50 ps} -r 100
+force -freeze sim:/Light/x2 0 0, 1 {100 ps} -r 200
+force -freeze sim:/Light/x1 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Light/x2 0 0, 1 {100 ps} -r 200
+force -freeze sim:/Light/x1 1 0, 0 {50 ps} -r 100
+force -freeze sim:/Light/x2 0 0, 1 {100 ps} -r 200
+run
+run -all
+# Break key hit
+# Simulation stop requested.
+# End time: 08:02:46 on Feb 09,2023, Elapsed time: 0:10:35
+# Errors: 0, Warnings: 6

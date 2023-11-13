@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 09 18:50:14 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : lab6_ronnyismael
+Top-level Entity Name : vending_machine_fsm
+Family : Cyclone IV E
+Total logic elements : 19
+    Total combinational functions : 19
+    Dedicated logic registers : 5
+Total registers : 5
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

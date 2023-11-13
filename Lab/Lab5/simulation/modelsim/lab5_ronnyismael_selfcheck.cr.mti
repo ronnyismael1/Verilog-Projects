@@ -1,0 +1,17 @@
+C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/self_check_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module self_check_tb
+
+Top level modules:
+	self_check_tb
+
+} {} {}} C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v {1 {vlog -work work -stats=none C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module GPFullAdder
+-- Compiling module CLALogic
+-- Compiling module CLA4
+
+Top level modules:
+	CLA4
+
+} {} {}}

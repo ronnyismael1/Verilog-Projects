@@ -1,0 +1,59 @@
+vsim -gui -l msim_transcript work.problem2
+# vsim -gui -l msim_transcript work.problem2 
+# Start time: 20:47:35 on Feb 26,2023
+# Loading work.problem2
+# Loading work.hard_block
+# ** Error: (vsim-3033) Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /problem2 File: C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo Line: 77
+#         Searched libraries:
+#             C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/work
+# ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /problem2 File: C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo Line: 90
+#         Searched libraries:
+#             C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/work
+# ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /problem2 File: C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo Line: 100
+#         Searched libraries:
+#             C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/work
+# ** Error: (vsim-3033) Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /problem2 File: C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo Line: 110
+#         Searched libraries:
+#             C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/work
+# ** Error: (vsim-3033) Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /problem2 File: C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo Line: 120
+#         Searched libraries:
+#             C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/work
+# Error loading design
+# End time: 20:47:36 on Feb 26,2023, Elapsed time: 0:00:01
+# Errors: 5, Warnings: 5
+vsim -gui -l msim_transcript work.hard_block
+# vsim -gui -l msim_transcript work.hard_block 
+# Start time: 20:48:24 on Feb 26,2023
+# Loading work.hard_block
+vsim -gui -l msim_transcript rtl_work.problem2
+# End time: 20:49:07 on Feb 26,2023, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 1
+# vsim -gui -l msim_transcript rtl_work.problem2 
+# Start time: 20:49:07 on Feb 26,2023
+# Loading rtl_work.problem2
+add wave  \
+sim:/problem2/a \
+sim:/problem2/b \
+sim:/problem2/c \
+sim:/problem2/y
+force a 0
+force b 0
+force c 1
+run 100
+force b 1
+run 100
+force a 1
+run 100
+force a 0
+run 100
+force b 0
+run 100
+force c 0
+run 100
+# End time: 20:50:45 on Feb 26,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 1

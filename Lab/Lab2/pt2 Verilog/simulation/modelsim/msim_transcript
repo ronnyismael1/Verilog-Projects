@@ -1,0 +1,5 @@
+# Reading pref.tcl
+# do lab2_ronnyismael_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }

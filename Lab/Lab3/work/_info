@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/20.1
+vlab03_ronnyismael
+!s110 1678139100
+!i10b 1
+!s100 >WfGKF<FY]=:^R8Wf@Iok2
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+IzC>eJBkaOGTP4zh?M:8LD1
+VDg1SIo80bB@j0V0VzS_@n1
+dC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab3
+w1678139039
+8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab3/lab03_ronnyismael.v
+FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab3/lab03_ronnyismael.v
+!i122 6
+L0 20 113
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1678139100.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab3/lab03_ronnyismael.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab3/lab03_ronnyismael.v|
+!i113 1
+o-work work
+tCvgOpt 0

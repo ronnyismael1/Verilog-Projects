@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/problem2.v
+source_file = 1, C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/db/problem2.cbx.xml
+design_name = problem2
+instance = comp, \y~output , y~output, problem2, 1
+instance = comp, \c~input , c~input, problem2, 1
+instance = comp, \b~input , b~input, problem2, 1
+instance = comp, \a~input , a~input, problem2, 1
+instance = comp, \LessThan0~0 , LessThan0~0, problem2, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

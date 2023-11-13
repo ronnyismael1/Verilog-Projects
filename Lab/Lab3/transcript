@@ -1,0 +1,16 @@
+vsim -gui work.lab03_ronnyismael
+# vsim -gui work.lab03_ronnyismael 
+# Start time: 13:48:04 on Mar 06,2023
+# Loading work.lab03_ronnyismael
+add wave  \
+sim:/lab03_ronnyismael/SW \
+sim:/lab03_ronnyismael/HEX0
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rismael  Hostname: NSC-6KK5JG3  ProcessID: 9160
+#           Attempting to use alternate WLF file "./wlfthksjc3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthksjc3
+force SW 1100
+run 100
+# End time: 13:50:09 on Mar 06,2023, Elapsed time: 0:02:05
+# Errors: 0, Warnings: 3

@@ -1,0 +1,86 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/simulation/modelsim
+vCLA4
+Z1 !s110 1679343014
+!i10b 1
+!s100 He`A3Ii0DLS]RUHCI?=8Z0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I9?XK<LRaU?<<FJGUP9Mej3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1679342114
+Z5 8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v
+Z6 FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v
+!i122 0
+L0 25 16
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1679343014.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v|
+!i113 1
+Z10 o-vlog01compat -work work
+Z11 !s92 -vlog01compat -work work +incdir+C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5
+Z12 tCvgOpt 0
+n@c@l@a4
+vCLALogic
+R1
+!i10b 1
+!s100 __TWBgc>^im@b;?ch?:fN1
+R2
+In2e_IZc02QK60JZENMb@W0
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 10 14
+R7
+r1
+!s85 0
+31
+R8
+Z13 !s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab5/GPFullAdder.v|
+R9
+!i113 1
+R10
+R11
+R12
+n@c@l@a@logic
+vGPFullAdder
+R1
+!i10b 1
+!s100 <N55ND=YS661DF<n@ai=i2
+R2
+IEjeJZOKHnj9DQD24T;16e3
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 1 8
+R7
+r1
+!s85 0
+31
+R8
+R13
+R9
+!i113 1
+R10
+R11
+R12
+n@g@p@full@adder

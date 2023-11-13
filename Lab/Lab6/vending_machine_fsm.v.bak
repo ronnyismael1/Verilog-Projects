@@ -1,0 +1,54 @@
+module vending_machine_fsm (
+	input wire clk, reset, nickel, dime, quarter,
+	output wire dispense, returnNickel, returnDime, returnTwoDimes
+);
+	reg [2:0] state, next_state;
+	parameter S0 = 3b'000;
+	parameter S1 = 3b'001;
+	parameter S2 = 3b'010;
+	parameter S3 = 3b'011;
+	parameter S4 = 3b'100;
+	
+	// State Register
+	always @ (posedge clk, posedge reset) 
+	begin
+		if (reset) state <= S0;
+		else state <= next_state;
+	end
+	
+	always @(*) begin
+		case (state)
+			S0: begin
+				if (nickel) next_state = S1;
+				else if (dime) next_state = S2;
+				else if (quarter) next_state = S0;
+			end
+			S1: begin
+				if (nickel) next_state = S2;
+				else if (dime) next_state = S3;
+				else if (quarter) next_state = S0;
+			end
+			S2: begin
+				if (nickel) next_state = S3;
+				else if (dime) next_state = S4;
+				else if (quarter) next_state = S0;
+			end
+			S3: begin
+				if (nickel) next_state = S4;
+				else if (dime) next_state = S0;
+				else if (quarter) next_state = S0;
+			end
+			S4: begin
+				if (nickel) next_state = S0;
+				else if (dime) next_state = S0;
+				else if (quarter) next_state = S0;
+			end
+		endcase
+	end
+	
+	assign dispense = (state == S3 && dime) || (state == S4 && nickel) || (state == S4 && dime) || (state == S4 && quarter); 
+	assign returnNickel = (state == S0 && quarter) || (state == S3 && quarter); 
+	assign returnDime = (state == S2 && quarter) || (state == S3 && quarter); 
+	assign returnTwoDimes = (state == S4 && quarter);
+	
+endmodule

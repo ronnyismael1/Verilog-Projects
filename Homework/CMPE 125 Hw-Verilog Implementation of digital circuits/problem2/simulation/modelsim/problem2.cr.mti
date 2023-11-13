@@ -1,0 +1,9 @@
+{C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo} {1 {vlog -work work -stats=none {C:/Users/rismael/Documents/Homework/S23/CMPE125/Homework/Homework/CMPE 125 Hw-Verilog Implementation of digital circuits/problem2/simulation/modelsim/problem2.vo}
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module problem2
+-- Compiling module hard_block
+
+Top level modules:
+	problem2
+
+} {} {}}

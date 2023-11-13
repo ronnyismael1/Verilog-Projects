@@ -1,0 +1,57 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/simulation/modelsim
+vvending_machine_fsm
+Z1 !s110 1681154220
+!i10b 1
+!s100 N^h^:B=2>V?g@LZzKRg780
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I``Fde^XKi@YAL<FEnVZJ73
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1680796932
+8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_fsm.v
+FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_fsm.v
+!i122 14
+L0 1 56
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1681154220.000000
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_fsm.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_fsm.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vvending_machine_tb
+R1
+!i10b 1
+!s100 CJ31Ph__<0_o1_Q;aVbIF0
+R2
+I6aW[<DSn2jeA34ZnB=^UC2
+R3
+R0
+w1681091391
+8C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_tb.v
+FC:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_tb.v
+!i122 15
+L0 1 63
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/rismael/Documents/SJSU/Homework/S23/CMPE125/Lab/Lab6/vending_machine_tb.v|
+!i113 1
+R6
+R7

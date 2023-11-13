@@ -1,0 +1,15 @@
+vsim -gui -l msim_transcript work.lab03_ronnyismael_owncode
+# vsim -gui -l msim_transcript work.lab03_ronnyismael_owncode 
+# Start time: 08:29:48 on Mar 06,2023
+# Loading work.lab03_ronnyismael_owncode
+add wave  \
+sim:/lab03_ronnyismael_owncode/d \
+sim:/lab03_ronnyismael_owncode/s
+force d 0000
+run 100
+force d 0001
+run 100
+force d 0010
+run 100
+# End time: 08:30:33 on Mar 06,2023, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 6
