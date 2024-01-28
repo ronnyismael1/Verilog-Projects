@@ -1,8 +1,0 @@
-|problem1
-a[0] => y.IN0
-a[1] => y.IN1
-a[2] => y.IN1
-a[3] => y.IN1
-y <= y.DB_MAX_OUTPUT_PORT_TYPE
-
-
